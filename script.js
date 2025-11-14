@@ -140,6 +140,7 @@ async function processImage() {
     transformedImageBlob = null; // Clear previous blob
 
     // Reset error handler for the new attempt
+    // Ab yeh error sirf processing ke dauraan hi trigger hoga
     outputImage.onerror = function() {
          outputImage.src='https://placehold.co/400x400/DC2626/FFFFFF?text=Image+Load+Failed';
          outputImage.alt='Image load failed due to invalid data or network issue'; 

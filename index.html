@@ -53,7 +53,8 @@
                          src="https://placehold.co/400x400/9CA3AF/FFFFFF?text=Result+Will+Appear+Here" 
                          alt="Generated Image" 
                          class="w-full h-auto object-contain rounded-lg shadow-md border-2 border-green-500 aspect-square"
-                         onerror="this.src='https://placehold.co/400x400/DC2626/FFFFFF?text=Image+Load+Failed'; document.getElementById('outputImage').alt='Image load failed due to invalid data or network issue'; showMessage('Error: Generated data was not a valid image. Check console for details.', 'bg-red-100 text-red-800'); this.parentElement.classList.remove('loaded');">
+                         
+                         onerror="this.src='https://placehold.co/400x400/DC2626/FFFFFF?text=Placeholder+Failed'; this.alt='Placeholder image failed to load';">
                     
                     <button class="download-icon" onclick="downloadTransformedImage()">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
